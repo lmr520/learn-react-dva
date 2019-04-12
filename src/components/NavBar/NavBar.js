@@ -134,11 +134,11 @@ class NavBar extends PureComponent {
           </form>
         )}
         <ul className="nav navbar-nav navbar-right clearfix">
-          <li>
+          {/* <li>
             <a href="https://github.com/LANIF-UI/dva-boot-admin">
               <Icon type="github" antd />
             </a>
-          </li>
+          </li> */}
           <li className="dropdown">
             <Popover
               placement="bottomRight"
@@ -148,7 +148,7 @@ class NavBar extends PureComponent {
               trigger="click"
             >
               <a className="dropdown-toggle">
-                <Icon type="radio-tower" />
+              <Icon type="mail" />
               </a>
             </Popover>
           </li>
@@ -162,7 +162,7 @@ class NavBar extends PureComponent {
             >
               <a className="dropdown-toggle">
                 <Badge dot>
-                  <Avatar src={require('assets/images/kkkb.jpg')}>
+                  <Avatar src={require('assets/images/a10.jpg')}>
                     {user.userName}
                   </Avatar>
                 </Badge>

@@ -216,7 +216,7 @@ class LeftSideBar extends PureComponent {
         <div className="sidebar-left-content">
           <header className="sidebar-header">
             <div className="userlogged clearfix">
-              <Icon type="woman" />
+            <Icon type="man" />
               <div className="user-details">
                 <span>{user.name}</span>
                 <div className="dropdown">

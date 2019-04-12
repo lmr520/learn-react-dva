@@ -1,0 +1,1 @@
+{"version":3,"sources":["css ./node_modules/css-loader??ref--5-oneOf-8-1!./node_modules/postcss-loader/src??postcss!./node_modules/less-loader/dist/cjs.js??ref--5-oneOf-8-3!./src/routes/Blank/components/index.module.less"],"names":[],"mappings":"AACA,qBACA,SACA","file":"51.3681380e.chunk.css","sourcesContent":["/* less-modules */\n.className--1a4ELruH {\n  color: red;\n}\n"]}

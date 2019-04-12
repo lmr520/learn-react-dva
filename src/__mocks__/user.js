@@ -41,7 +41,7 @@ export default ({fetchMock, delay, mock, toSuccess, toError}) => {
     '/api/user/menu': options => toSuccess([
       {
         name: '首页',
-        icon: 'dashboard',
+        icon: 'home',
         path: '/dashboard',
       },
       {
@@ -195,7 +195,13 @@ export default ({fetchMock, delay, mock, toSuccess, toError}) => {
           {
             name: 'CRUD',
             path: '/crud',
-          },
+          }
+        ],
+      },   {
+        name: 'M-ui',
+        icon: 'customer-service',
+        path: '/Mui',
+        children: [
           {
             name: 'mui-头部',
             path: '/cust',
@@ -211,6 +217,23 @@ export default ({fetchMock, delay, mock, toSuccess, toError}) => {
           {
             name: 'mui-弹框',
             path: '/MuiDilog',
+          },
+          {
+            name: 'mui-表格',
+            path: '/MuiTable',
+          }
+          ,
+          {
+            name: 'mui-时间选择器',
+            path: '/MuiPicker',
+          } ,
+          {
+            name: 'R-表格',
+            path: '/RTable',
+          },
+          {
+            name: 'R-UI',
+            path: '/RSui',
           }
         ],
       },

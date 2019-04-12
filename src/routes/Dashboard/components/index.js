@@ -13,8 +13,8 @@ const { Chart, Axis, Geom, Tooltip, Legend, Coord, Label } = G2;
 const rankingListData = [];
 for (let i = 0; i < 7; i += 1) {
   rankingListData.push({
-    title: `工专路 ${i} 号店`,
-    total: 323234
+    title: `浙江区 ${i} 号分公司`,
+    total: 323234-i*10
   });
 }
 
@@ -48,7 +48,7 @@ export default class Dashboard extends BaseComponent {
                 <h2>
                   <b>523</b>
                 </h2>
-                <h5 className="text-muted">QQ</h5>
+                <h5 className="text-muted">财务</h5>
               </Panel>
             </Col>
             <Col md={6}>
@@ -57,7 +57,7 @@ export default class Dashboard extends BaseComponent {
                 <h2>
                   <b>99+</b>
                 </h2>
-                <h5 className="text-muted">微信</h5>
+                <h5 className="text-muted">税务</h5>
               </Panel>
             </Col>
             <Col md={6}>
@@ -66,7 +66,7 @@ export default class Dashboard extends BaseComponent {
                 <h2>
                   <b>2</b>
                 </h2>
-                <h5 className="text-muted">skype</h5>
+                <h5 className="text-muted">采购</h5>
               </Panel>
             </Col>
             <Col md={6}>
@@ -75,13 +75,13 @@ export default class Dashboard extends BaseComponent {
                 <h2>
                   <b>999</b>
                 </h2>
-                <h5 className="text-muted">github</h5>
+                <h5 className="text-muted">销售</h5>
               </Panel>
             </Col>
           </Row>
           <Row>
             <Col>
-              <Panel title="数据面板组件" height={300}>
+              <Panel title="大数据展示" height={300}>
                 <div className="flex">
                   <div className="flex-auto-hidden flex flex-column">
                     <h4 className="flex-none">销售额分布</h4>
@@ -90,7 +90,7 @@ export default class Dashboard extends BaseComponent {
                     </div>
                   </div>
                   <div className="flex-none sales-order">
-                    <h4>门店销售额排名</h4>
+                    <h4>浙江区销售排名</h4>
                     <ul>
                       {rankingListData.map((item, i) => (
                         <li key={item.title}>

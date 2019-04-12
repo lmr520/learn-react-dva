@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[57],{2124:function(a,t,e){"use strict";e.r(t);var p=e(261),s=e(128);t.default=Object(p.a)({namespace:"datatable",state:{pageData:s.a.create(),pageDataSort:s.a.create(),deptTreeData:[],dataList:{list:[]}}})}}]);
+//# sourceMappingURL=57.3af9c65f.chunk.js.map
