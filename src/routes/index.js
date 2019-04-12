@@ -30,10 +30,10 @@ import CSSAnimate from './UI/CSSAnimate';
 import Alerts from './UI/Alerts';
 import Button from './UI/Button';
 import CRUD from './Business/CRUD';
-import Cust from './Business/CUST';
-import MuiCards from './Business/MuiCards';
-import MuiChips from './Business/MuiChips';
-import MuiDilog from './Business/MuiDilog';
+import Cust from './Mui/CUST';
+import MuiCards from './Mui/MuiCards';
+import MuiChips from './Mui/MuiChips';
+import MuiDilog from './Mui/MuiDilog';
 
 
 /**

@@ -195,7 +195,13 @@ export default ({fetchMock, delay, mock, toSuccess, toError}) => {
           {
             name: 'CRUD',
             path: '/crud',
-          },
+          }
+        ],
+      },   {
+        name: 'M-ui',
+        icon: 'bulb',
+        path: '/Mui',
+        children: [
           {
             name: 'mui-头部',
             path: '/cust',
