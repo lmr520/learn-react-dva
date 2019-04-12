@@ -13,10 +13,6 @@
 
 基于React生态系统的最成熟的技术体系，搭建的一套开箱即用的后台管理系统，框架里包含了一些独有的定制组件，以及许多经过大量实践口碑良好的第三方组件，它不仅仅是一个简单的仪表盘展示界面，更是保证您下一个web项目所必需的所有工具，我们希望使用它的人可以快速、稳定的开发出健壮、美观、易用的web程序。
 
-
-[GitHub主页](https://github.com/LANIF-UI/dva-boot-admin) |
-[码云主页](https://gitee.com/wiqi/dva-boot-admin)
-
 ![](https://ucarecdn.com/b296e689-19fd-46f5-863e-40c0d4ba7a61/1.jpg)
 
 ## 目录
@@ -108,11 +104,6 @@ $ yarn build --analyze
 | >= IE10 | last 2 versions | last 2 versions | last 2 versions | last 2 versions
 
 ## 结尾
-
-欢迎大家提问题，感谢大家的PR，如果觉得不错，还请帮忙加个:star:哦
-
-企鹅群 820881369 :penguin:
-
 # 截图
 
 ![](https://ucarecdn.com/7602439b-fa79-4a57-a2f1-c4448710c1c2/14.jpg)
