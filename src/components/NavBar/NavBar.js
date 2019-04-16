@@ -5,6 +5,9 @@ import { Link } from 'dva/router';
 import cx from 'classnames';
 import './style/index.less';
 import logoImg from 'assets/images/yyclound.png';
+import { Button, Menu, Checkbox, Table, Pagination, Grid, Card, Divider, Header, Image, Modal} from 'semantic-ui-react'
+import 'semantic-ui-css/semantic.min.css';
+import contemplativereptile from 'assets/images/contemplative-reptile.jpg';
 import SearchBox from './SearchBox';
 
 /**
@@ -75,7 +78,7 @@ class NavBar extends PureComponent {
       user,
       isMobile
     } = this.props;
-
+    const nummap = [1, 2, 3, 4, 5, 6, 7, 8]
     const classnames = cx('navbar', {
       'navbar-fixed-top': !!fixed,
       'navbar-sm': isMobile ? true : collapsed,
@@ -139,18 +142,43 @@ class NavBar extends PureComponent {
               <Icon type="github" antd />
             </a>
           </li> */}
-          <li className="dropdown">
+         
+          <li className="dropdown" style={{marginRight:100}}>
             <Popover
               placement="bottomRight"
               title={'通知'}
               overlayClassName={cx('navbar-popup', { [theme]: !!theme })}
-              content={''}
+              content={'用友云,NB NB'}
               trigger="click"
             >
               <a className="dropdown-toggle">
               <Icon type="mail" />
               </a>
             </Popover>
+          </li>
+          <li className="dropdown">
+          <div style={{marginTop:10}}>
+          <Modal trigger={<Button>RSUI-Model</Button>}>
+            <Modal.Header>Profile Picture</Modal.Header>
+            <Modal.Content image scrolling>
+              <Image size='medium' src={contemplativereptile} wrapped />
+
+              <Modal.Description>
+                <Header>Modal Header</Header>
+                <p>This is an example of expanded content that will cause the modal's dimmer to scroll</p>
+
+                {nummap.map(i => (
+                  <Image key={i} src={contemplativereptile} style={{ paddingBottom: 5 }} />
+                ))}
+              </Modal.Description>
+            </Modal.Content>
+            <Modal.Actions>
+              <Button primary>
+                Proceed <Icon name='chevron right' />
+              </Button>
+            </Modal.Actions>
+          </Modal>
+        </div> 
           </li>
           <li className="dropdown">
             <Popover

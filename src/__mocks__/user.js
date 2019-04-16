@@ -237,6 +237,17 @@ export default ({fetchMock, delay, mock, toSuccess, toError}) => {
           }
         ],
       },
+      {
+        name: '订单中心',
+        icon: 'slack',
+        path: '/Order',
+        children: [
+          {
+            name: '销售订单',
+            path: '/order',
+          }
+        ],
+      },
     ], 400)
   } 
 }
