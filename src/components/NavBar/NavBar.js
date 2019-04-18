@@ -143,7 +143,7 @@ class NavBar extends PureComponent {
             </a>
           </li> */}
          
-          <li className="dropdown" style={{marginRight:100}}>
+          <li className="dropdown" style={{marginRight:20}}>
             <Popover
               placement="bottomRight"
               title={'通知'}
@@ -152,8 +152,12 @@ class NavBar extends PureComponent {
               trigger="click"
             >
               <a className="dropdown-toggle">
-              <Icon type="mail" />
+              <Icon type="ring" />
+              <Badge dot>
+              </Badge>
               </a>
+              
+             
             </Popover>
           </li>
           <li className="dropdown">
@@ -213,10 +217,10 @@ const UserDropDown = props => (
       </a>
     </li>
     <li className="list-group-item">
-      <a className="animated animated-short fadeInUp">
+    <Link to="/dep/men">
         <Icon type="users" /> 好友
         <Badge count={6} className="label" />
-      </a>
+    </Link>
     </li>
     <li className="list-group-item">
       <a className="animated animated-short fadeInUp">

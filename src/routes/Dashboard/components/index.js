@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ Fragment } from 'react';
 import { connect } from 'dva';
 import { Layout, Col, Row,Carousel} from 'antd';
 import Icon from 'components/Icon';
@@ -7,6 +7,7 @@ import Panel from 'components/Panel';
 import G2 from 'components/Charts/G2';
 import DataSet from '@antv/data-set';
 import './index.less';
+import logoImg from 'assets/images/a2.jpg';
 const { Content } = Layout;
 const { Chart, Axis, Geom, Tooltip, Legend, Coord, Label } = G2;
 
@@ -25,6 +26,7 @@ export default class Dashboard extends BaseComponent {
   render() {
     const { dashboard } = this.props;
     const { bar1, bar2 } = dashboard;
+    
     return (
       <Layout className="full-layout page dashboard-page">
         <Content>
@@ -32,52 +34,67 @@ export default class Dashboard extends BaseComponent {
           <Row gutter={20}>
      
           <Carousel autoplay className="carou">
-    <div> <img className="img-co" src={require('assets/images/kkk.png')} alt=""/></div>
-    <div> <img  className="img-co" src={require('assets/images/a2.jpg')} alt=""/></div>
-    <div> <img className="img-co" src={require('assets/images/a3.jpg')} alt=""/></div>
-    <div> <img className="img-co" src={require('assets/images/a4.jpg')} alt=""/></div>
-    <div> <img className="img-co" src={require('assets/images/a5.jpg')} alt=""/></div>
-    <div> <img className="img-co" src={require('assets/images/a6.jpg')} alt=""/></div>
+    <div className="img-co"> <img className="img-co-img" src={require('assets/images/yylogo.jpg')} alt=""/></div>
+    <div className="img-co"> <img className="img-co-img"src={require('assets/images/u5.jpg')} alt=""/></div>
+    <div className="img-co"> <img className="img-co-img" src={require('assets/images/u6.jpg')} alt=""/></div>
+    <div className="img-co"> <img className="img-co-img"src={require('assets/images/u7.jpg')} alt=""/></div>
+    <div className="img-co"> <img className="img-co-img" src={require('assets/images/u3.jpg')} alt=""/></div>
+    <div className="img-co"> <img className="img-co-img" src={require('assets/images/u4.jpg')} alt=""/></div>
   </Carousel>
 
           </Row>
           <Row gutter={20}>
             <Col md={6}>
               <Panel className="qq" header={false} cover>
-                <Icon type="qq" antd />
+                <Icon type="ie" antd />
                 <h2>
                   <b>523</b>
                 </h2>
-                <h5 className="text-muted">财务</h5>
+                <h5 className="text-muted">NC</h5>
               </Panel>
             </Col>
             <Col md={6}>
               <Panel className="wechat" header={false} cover>
-                <Icon type="wechat" antd />
+                <Icon type="dingding" antd />
                 <h2>
                   <b>99+</b>
                 </h2>
-                <h5 className="text-muted">税务</h5>
+                <h5 className="text-muted">U8</h5>
               </Panel>
             </Col>
             <Col md={6}>
               <Panel className="skype" header={false} cover>
-                <Icon type="skype" antd />
+                <Icon type="sync" antd />
                 <h2>
                   <b>2</b>
                 </h2>
-                <h5 className="text-muted">采购</h5>
+                <h5 className="text-muted">IUAP</h5>
               </Panel>
             </Col>
             <Col md={6}>
               <Panel className="github" header={false} cover>
-                <Icon type="github" antd />
+                <Icon type="dribbble" antd />
                 <h2>
                   <b>999</b>
                 </h2>
-                <h5 className="text-muted">销售</h5>
+                <h5 className="text-muted">NCC</h5>
               </Panel>
             </Col>
+              {/* <Card key={card.header}>
+                <Image src={card.avatar} />
+              <Card.Content>
+                  <Fragment>
+                    <Card.Header>{card.header}</Card.Header>
+                    <Card.Meta>{card.date}</Card.Meta>
+                    <Card.Description>{card.description}</Card.Description>
+                    <Button  primary>
+                  Add
+                </Button>
+                <Button >Delete</Button>
+                  </Fragment>
+              </Card.Content>
+
+            </Card> */}
           </Row>
           <Row>
             <Col>

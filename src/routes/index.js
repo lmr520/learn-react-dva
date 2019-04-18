@@ -39,6 +39,7 @@ import MuiPicker from './Mui/MuiPicker';
 import RTable from './Mui/RTable';
 import RSui from './Mui/RSui';
 import Order from './Order';
+import Men from './Dep/Men';
 
 
 /**
@@ -104,6 +105,7 @@ const routesConfig = app => [
       RTable(),
       RSui(),
       Order(app),
+      Men(app),
     ]
   }
 ];
